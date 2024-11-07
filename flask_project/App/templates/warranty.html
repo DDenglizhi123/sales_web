@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/warranty.css">
+</head>
+
+<body>
+<div class='container'>
+    <div class='header'>
+        <img src="../static/img/title.png" alt="">
+    </div>
+
+    <div class='content'>
+        <div class="tax_invoice">
+            <b>Certificate of Warranty</b>
+        </div>
+        <div class="address">
+            <p>To: {{ client_name }} - {{ region_name1 }}</p>
+            <p>ADD:{{ address_1 }}, {{ address_2 }}, {{ address_3 }}</p>
+            <p>Related Contract No.:</p>
+            <p class="contract_name">{{ contract_number }} [{{ region_name1 }}] Between EVERWELL CABLE AND ENGINEERING
+                COMPANY LIMITED And {{ client_name }}.</p>
+            <p>LPO NO.: {{ LPO_number }}-{{ region_name1 }}</p>
+            <p></p>
+        </div>
+        <div class="content1">
+            <div>
+                <p>Issuing Date: {{ date_time_now }}</p>
+                <p>Products and Quantity:</p>
+            </div>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Specification</th>
+                    <th>Unit</th>
+                    <th>Quantity</th>
+                    <th>LPO No.</th>
+                    <th>ND No.</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>{{ item_description }}</td>
+                    <td>{{ item_specification }}</td>
+                    <td>{{ unit }}</td>
+                    <td>{{ quantity_delivered }}</td>
+                    <td>{{ LPO_number }}</td>
+                    <td>{{ DN_Number }}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Warranty period:12 months from date of commissioning (or) 18 months from date of shipment. If not agreed
+            otherwise, Everwell Cable warranty conditions are as follows:</p>
+        <p>Everwell Cable covers all defects directly related to design, material or workmanship and all damaged parts
+            will be repaired or replaced ex-works, at the opinion of Everwell Cable, free of charge.</p>
+        <p>The purchaser shall give written notice of any defect within ten days after discovery thereof, and shall put
+            the defective parts at the disposal of Everwell Cable.</p>
+        <p>The warranty is not applicable in the case of defect due to design originating from purchaser, faulty
+            installation by or on instruction of the purchaser, normal wear and tear, improper operation or discharged
+            of Everwell Cable technical instruction, accidental handling, improper maintenance, improper environment,
+            repair or intervention by the purchaser or any third party. For material not manufactured by Everwell Cable,
+            are only liable to the extent of the warranty given to us by our own supplier and within the above time
+            limit.</p>
+        <p>Everwell Cable liability is expressly limited, unless otherwise specified by compulsory legal prescriptions,
+            to the cost of correcting defects in the equipment as approved herein, and shall in no case exceed the price
+            allowable to the equipment or part thereof which gives rise to the claim.</p>
+        <p>Everwell Cable shall not be liable for any special or consequential damages, such as loss of profit of
+            revenue, loss of other equipment, downtime costs, removal or re-installation costs, claims of third parties
+            against the purchaser.</p>
+
+
+    </div>
+    <div class='footer'>
+        <div class="container1">
+            <p id="authorized">Authorized by:</p>
+        </div>
+        <div class="container1">
+            <div class="bottom-text">_______________________</div>
+        </div>
+        <p><strong>Lizhi Deng</strong></p>
+        <p><em>Sales & Marketing Manager</em></p>
+        <p><strong>EVERWELL CABLE AND ENGINEERING COMPANY LIMITED</strong></p>
+        <hr style="color:rgb(142, 187, 241); border: 1px solid; width: 100%;">
+        <p style="color:rgb(166, 166, 166); font-size: 9px; text-align: center;">Factory address: Plot No. 4-12, Block
+            G, Dundani Mkuranga, Coast Region, Tanzania</p>
+    </div>
+</div>
+</body>
+
+</html>

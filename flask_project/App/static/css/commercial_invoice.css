@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+@page {
+    size: A4;
+    margin: 20mm; /* 设置页边距 */
+}
+
+.container {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto;
+    padding: 5mm;
+    box-sizing: border-box;
+}
+
+.header img {
+    text-align: center;
+    max-width: 100%;
+}
+
+.table-container {
+    width: 100%;
+    min-height: 490px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px
+}
+
+th {
+    background-color: #a1a1a1;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 4px;
+    text-align: center;
+}
+
+td {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 4px;
+    text-align: center;
+}
+
+.float, .content3 {
+    overflow: hidden; /* 清除浮动 */
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+.tax_invoice {
+    font-size: 20px;
+    color: rgb(77, 158, 255);
+    text-align: center;
+}
+
+.container1 {
+    position: relative; /* 父容器设置为相对定位 */
+    height: 50px;
+    padding: 10px;
+}
+
+.bottom-text {
+    position: absolute;
+    bottom: 0; /* 将文本对齐到容器底部 */
+    left: 0;
+}

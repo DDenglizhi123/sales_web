@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/commercial_invoice.css">
+</head>
+
+<body>
+<div class='container'>
+    <div class='header'>
+        <img src="../static/img/title.png" alt="">
+    </div>
+
+    <div>
+        <div class='float'>
+            <p class="float_left">TIN NO.: {{ tin_number }}</p>
+            <p class="float_right">VRN NO.: {{ vrn_number }}</p>
+        </div>
+        <div class="tax_invoice"><b>TAX INVOICE</b></div>
+        <div class="address">
+            <p>To: {{ client_name }} - {{ region_name1 }}</p>
+            <p>ADD:{{ address_1 }}, {{ address_2 }}, {{ address_3 }}</p>
+            <p>Related Contract No.: {{ contract_number }} [{{ region_name1 }}] Between EVERWELL CABLE AND ENGINEERING
+                COMPANY LIMITED And {{ client_name }}.</p>
+            <p>LPO NO.: {{ lpo_number }}-{{ region_name1 }}</p>
+            <p></p>
+        </div>
+        <hr>
+        <div class="content3">
+            <div class="float_left">
+                <p>CONTRACTOR: {{ client_name }}</p>
+                <p>TIN:{{ tin_number }}</p>
+            </div>
+            <div class="float_right">
+                <p>Invoice No.:{{ commercial_invoice_number }}</p>
+                <p>Invoice Date:{{ date }}</p>
+            </div>
+        </div>
+        <hr>
+        <div class="bank_info">
+            <p>Account Name: EVERWELL CABLE AND ENGINEERING COMPANY LIMITED</p>
+            <p>Bank Name: STANBIC BANK (TANZANIA) LIMITED</p>
+            <p>TZS Account NO.: 9120001434266</p>
+        </div>
+        <hr>
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>Serial No.</th>
+                    <th>Product Description</th>
+                    <th>Unit</th>
+                    <th>Quantity</th>
+                    <th>Unit price(TZS)</th>
+                    <th>Total price(TZS)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>{{ serial_number }}</td>
+                    <td>{{ item_description }}</td>
+                    <td>{{ unit }}</td>
+                    <td>{{ quantity_delivered }}</td>
+                    <td>{{ unit_price }}</td>
+                    <td>{{ total_price }}</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align:right">
+                        <div>Sub Total(TZS)</div>
+                        <div>VAT 18%(TZS)</div>
+                        <div>Grand Total(TZS)</div>
+                    </td>
+                    <td>
+                        <div>{{ sub_total }}</div>
+                        <div>{{ vat_amount }}</div>
+                        <div>{{ grand_total }}</div>
+                    </td>
+                </tr>
+                    <td colspan="6" style="background-color: lightgray; color: #000000;"><em>Amount in words:{{ amount_in_words }}</em></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>Best regards,</p>
+        <div class="container1">
+            <div class="bottom-text">_______________________</div>
+        </div>
+        <p><strong>Lizhi Deng</strong></p>
+        <p><em>Sales & Marketing Manager</em></p>
+        <p><strong>EVERWELL CABLE AND ENGINEERING COMPANY LIMITED</strong></p>
+    </div>
+    <div class='footer'>
+        <hr style="color:rgb(142, 187, 241); border: 1px solid; width: 100%;">
+        <p style="color:rgb(166, 166, 166); font-size: 9px; text-align: center;">Factory address: Plot No. 4-12, Block
+            G, Dundani Mkuranga, Coast Region, Tanzania</p>
+    </div>
+</div>
+</body>
+
+</html>

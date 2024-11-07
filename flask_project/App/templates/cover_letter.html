@@ -1,0 +1,62 @@
+{% extends "template.html" %}
+{% block content %}
+    <div class='cover-container'>
+        <div>
+            <h3 style="color:mediumblue; text-align: center"><strong>Cover Letter</strong></h3>
+            <p>Date: {{ date }}</p>
+            <p>REF NO.: {{ contract_number }}</p>
+            <br>
+            <p>{{ client_name }}</p>
+            <p>P.O.Box: {{ pobox_number }}</p>
+            <p>{{ address_1 }}</p>
+            <p>{{ address_2 }}</p>
+            <p>{{ address_3 }}</p>
+            <br>
+            <br>
+            <p>Dear Sir/ Madam,</p>
+            <br>
+            <p><strong><u>RE: SUBMISSION OF PRODUCT DELIVERY - PAYMENT PROVE DOCUMENTS</u></strong></p>
+            <p>In reference to the above subject; kindly be informed we have delivered your required products ( for
+                {{ region_name1 }}’s consignment ) follow by the attached documents for the purpose of the payment prove
+                process procedure.</p>
+            <br>
+            <p>Kindly find those attached documents’ details as below:</p>
+            <div>
+                <table>
+                    <thead>
+                    <tr>
+                        <th rowspan="2">LPO Number</th>
+                        <th rowspan="2">Commercial Invoice Number</th>
+                        <th>LPO</th>
+                        <th>Commercial Invoice</th>
+                        <th>Certificate of Warranty</th>
+                        <th>Delivery Note</th>
+                        <th>Tax/EFD Receipt</th>
+                    </tr>
+                    <tr>
+                        <th>Copy</th>
+                        <th>Original</th>
+                        <th>Original</th>
+                        <th>Original</th>
+                        <th>Original</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>{{ lpo_number }}</td>
+                        <td>{{ commercial_invoice_number }}</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p>The total amount of this batch required product (s) been delivered is TZS{{ total_amount }} VAT
+                    inclusive.</p>
+            </div>
+            <p class="best-regards">Best regards,</p>
+        </div>
+    </div>
+{% endblock %}
